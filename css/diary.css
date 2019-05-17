@@ -1,0 +1,13 @@
+.toplan{
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: ghostwhite;
+}
+.toplan img {
+    width: 130px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+}

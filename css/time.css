@@ -1,0 +1,68 @@
+.timer{
+    width: 1200px;
+    height: 100%;
+    min-height: 600px;
+    /*padding: 20px;*/
+    background: ghostwhite;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.timer .time{
+    padding: 30px;
+}
+/*.time{*/
+/*    position: relative;*/
+/*}*/
+.time .title{
+    margin-bottom: 15px;
+    /*position: absolute;*/
+}
+.time ul{
+    overflow: hidden;
+    /*position: absolute;*/
+}
+.time li{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /*position: absolute;*/
+    /*margin-top: 10px;*/
+}
+.time li a{
+    color: black;
+    font-size: 16px;
+}
+.time li span{
+    position: relative;
+    line-height: 32px;
+    padding-right: 40px;
+    color: gray;
+}
+.time li span::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background:gray;
+    right: 18px;
+    /*left: 900px;*/
+}
+.time .list i{
+    position: relative;
+    font-style: normal;
+}
+.time .list i::before{
+    content: " ";
+    height: 10px;
+    width: 10px;
+    border: 2px solid gray;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    left: -31px;
+    border-radius: 50%;
+    transition: all .2s ease;
+}
+.list li:hover i::before{
+    background: black;
+}
