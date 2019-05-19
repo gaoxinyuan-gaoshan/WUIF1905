@@ -1,0 +1,83 @@
+.title .connav{
+    float: right;
+    /*font-size: 14px;*/
+}
+.title .connav a{
+    color: green;
+}
+.title .connav a:hover{
+    color: brown;
+}
+.mainend span{
+    margin: 0 5px;
+}
+.mainend h1{
+    font-size: 22px;
+    margin-top: 20px;
+}
+.people span{
+    color: #999;
+}
+.mainend .jianjie{
+    color: blueviolet;
+    border: 1px solid brown;
+    padding: 10px;
+    margin-top: 80px;
+    line-height: 23px;
+    background: lavender;
+}
+.mainend .jianjie b{
+    margin-right: 10px;
+    color: #000;
+}
+.xiawen img{
+    transition: none;
+    margin-top: 20px;
+}
+.nextinfo p{
+    margin: 15px 0;
+}
+.nextinfo a{
+    color: #000;
+}
+.nextinfo a:hover{
+    text-decoration: underline;
+}
+.remark{
+    background: ghostwhite;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.flag{
+    background: ghostwhite;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.flag ul a{
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    background: ghostwhite;
+    float: left;
+    padding: 3px 10px;
+    margin: 10px 5px 0 0;
+    border-radius: 3px;
+    transition: all 0.5s;
+    color: blue;
+}
+.flag ul a:first-child {
+    background: #036564;
+}
+.flag ul a:nth-child(3n){
+    background: navajowhite;
+}
+.flag ul a:nth-child(3n-1){
+    background: lemonchiffon;
+}
+.flag ul a:nth-child(3n-2){
+    background: pink;
+}

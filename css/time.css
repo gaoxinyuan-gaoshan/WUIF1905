@@ -3,7 +3,7 @@
     height: 100%;
     min-height: 600px;
     /*padding: 20px;*/
-    background: ghostwhite;
+    background: url(../image/abbg.png) no-repeat right top ghostwhite;;
     margin: 20px auto;
     border-radius: 5px;
 }

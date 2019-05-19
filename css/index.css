@@ -677,23 +677,28 @@ li .htitle a{
     width: 35px;
     height: 35px;
     border-radius: 100%;
-    /*padding: 2px;*/
-    overflow: hidden;
-    line-height: 34px;
     float: left;
     position: relative;
     display: block;
+    padding: 2px;
 }
-.author a{
+.author img{
     width: 100%;
     border-radius: 50%;
 }
-.author span{
+
+.author::after{
+    content: "";
     position: absolute;
-    width: 13px;
-    height:13px;
+    background: url(../image/v.png) no-repeat;
+    background-size: 12px;
+    width: 12px;
+    height: 12px;
     right: 0;
     bottom: 0;
+}
+.author a img{
+    transition: none;
 }
 /*.author .picture::after{*/
 /*    content: "";*/
