@@ -28,6 +28,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    margin-bottom: 20px;
     /*position: absolute;*/
     /*margin-top: 10px;*/
 }
@@ -68,4 +69,21 @@
 }
 .list li:hover i::before{
     background: black;
+}
+.list .page{
+    text-align: center;
+    color: gray;
+    width: 100%;
+    clear: both;
+    margin: 0 0 10px;
+}
+.page a{
+    margin: 0 5px 10px;
+    padding: 5px 10px;
+    background: lavender;
+    color: gray;
+    display: inline-block;
+}
+.page .hhh{
+    font-weight: bold;
 }
