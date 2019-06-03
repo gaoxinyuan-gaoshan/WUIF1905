@@ -1,10 +1,7 @@
 window.onload =function () {
     let home = document.getElementById('home');
-    console.log(1);
     let btnlist = document.getElementsByClassName('btnlist')
-    // console.dir(dians);
     let ban = btnlist[0].getElementsByTagName('li')
-    // console.dir(ban);
     let activeColor = '#046b80', disactiveColor = '#ffffff'
     home.onmouseenter = function () {
         home.style.color = 'red'
@@ -35,11 +32,8 @@ window.onload =function () {
                     }
                     this.classList.add('hot')
                 }
-
             }
-
         }
-
     })
     // for (var i =0;i<tablist.length;i++){
     //     tablist[i].onmouseenter =function () {
@@ -79,9 +73,9 @@ window.onload =function () {
     let rightbtn = document.querySelector('.rightbtn');
     let leftbtn = document.querySelector('.leftbtn');
     let bannerImg = document.querySelectorAll('.bannerImg li');
-    let w = bannerImg[0].offsetWidth
-    let flag = true
-    console.log(bannerImg.length);
+    let w = bannerImg[0].offsetWidth;
+    let flag = true;
+
     rightbtn.onclick = function () {
         if (!flag) {
             return
@@ -112,7 +106,6 @@ window.onload =function () {
     let t = setInterval(rightbtn.onclick, 3000);
     bannerleft.onmouseenter = function () {
         clearInterval(t)
-
     }
     bannerleft.onmouseleave = function () {
         t = setInterval(rightbtn.onclick, 3000);
@@ -130,6 +123,31 @@ window.onload =function () {
 
         }
     }
+
+    for(let i=0;i<ban.length;i++){
+        ban[i].onclick=function () {
+            next=i;
+            if(i>current){
+                //左移
+                bannerImg[next].style.left= w +'px';
+                animate(bannerImg[current],{left:-w});
+                animate(bannerImg[next],{left:0});
+            }else if(i<current){
+                //右
+                bannerImg[next].style.left= -w +'px';
+                animate(bannerImg[current],{left:w});
+                animate(bannerImg[next],{left:0});
+            }else{
+                return;
+            }
+            Array.prototype.forEach.call(ban,function (elem){
+                elem.style.background='none';
+            });
+            ban[i].style.background='#000';
+            current=next;
+        }
+    }
+
 
     // 懒加载
     let viewH = window.innerHeight;
