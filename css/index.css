@@ -262,11 +262,21 @@ img{
 .diarylist li{
     float: left;
     margin-right: 25px;
+    position: relative;
 }
 .diarylist li a{
     color: green;
     font-size: 18px;
     display: block;
+}
+.diarylist li .titlehot::after{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background: #000;
+    left: 0;
+    bottom: 1px;
 }
 .diaryleft .diarytab{
     width: 100%;

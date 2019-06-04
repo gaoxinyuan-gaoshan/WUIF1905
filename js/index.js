@@ -148,7 +148,28 @@ window.onload =function () {
         }
     }
 
+//diary
+    let dailyLeftT = document.querySelectorAll(".diarylist >li >a");
 
+    dailyLeftT.forEach(function (ele) {
+        ele.onclick=function () {
+            dailyLeftT.forEach(function (ele) {
+                ele.classList.remove("titlehot");
+            });
+            this.classList.add("titlehot");
+        }
+    })
+
+
+    let dailyLeftL = document.querySelectorAll(".diarylist > li");
+    dailyLeftL.forEach(function (ele) {
+        ele.onmouseenter=function () {
+            dailyLeftL.forEach(function (ele) {
+                ele.classList.remove("hot")
+            })
+            this.classList.add("hot");
+        }
+    })
     // 懒加载
     let viewH = window.innerHeight;
     let imgs = document.querySelectorAll('.lazy')

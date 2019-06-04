@@ -1,0 +1,113 @@
+
+.background{
+    width: 1160px;
+    background: white;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+}
+.back{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 250px;
+    z-index: 99999;
+}
+.title{
+    margin-bottom: 20px;
+}
+.f-box form > ul > li{
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.headImage li{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.headImage li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+textarea{
+    width: 99%;
+    resize: none;
+}
+.f-box form  li input[type="submit"]{
+    display: inline-block;
+    padding: 0 20px;
+    margin-right: 10px;
+    background: black;
+    color: white;
+    line-height: 28px;
+    float: right;
+    border: none;
+    border-radius: 5px
+}
+.f-box form li input[type="reset"] {
+    display: inline-block;
+    padding: 0 20px;
+    margin-right: 10px;
+    background: black;
+    color: white;
+    line-height: 28px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+}
+.messagee >li{
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999999;
+    display: flex;
+}
+.messagee .thum{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    float: left;
+    display: inline-block;
+}
+.messagee .text{
+    display: inline-block;
+    width: 100%;
+    margin-left: 15px;
+    float: left;
+    flex: 1;
+}
+.messagee .text p{
+    margin-bottom: 6px;
+    overflow: hidden;
+    color: #333333;
+}
+.messagee .text b{
+    display: inline-block;
+    float: left;
+}
+.messagee .text span{
+    float: right;
+}
+.messagee .reply p {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #f9f9f9;
+}
+.messagee .reply p b {
+    color: palevioletred;
+}
+.messagee .reply{
+    padding: 10px 0;
+    border-bottom: 1px dashed #999999;
+}
+
